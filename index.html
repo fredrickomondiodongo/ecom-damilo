@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damilola</title> <link rel="icon" href="images/logo/logo-removebg.png" type="image/x-icon" > 
     <script src="https://kit.fontawesome.com/e7e37a5f37.js" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/sidenav.css">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/mainpagemedia.css">
 </head>
 <body>
+    
     <div class="navbar">
         <div class="logo" >
             <img src="images/logo/logo-removebg.png" width="70px" alt="">
@@ -21,13 +22,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li id="hm"><a href="index.html">Home &#x25BE;</a>
+                    <ul class="dropdown">   
+                        <li><a href="#fh">Featured Products</a></li>
+                        <li><a href="#testimonial">Testimonials</a></li>     
+                    </ul>
+                </li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img src="images/cart.png" width="30px" height="30px" alt="" id="cart">
+      
     </div> 
     <div class="header">
        
@@ -37,7 +43,8 @@
                 <div class="col-2" id="col-2Paragraph">
                     <h1>We cut to fit!</h1>
                     <p>Explore a wide range of high-quality clothing options that will keep 
-                        you looking stylish and feeling comfortable. 
+                        you looking stylish and feeling comfortable. <br>
+                     
                     </p>
                     <a href="products.html" class="btn">Explore Now &#8594;</a>
                 </div>
@@ -53,12 +60,14 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#fh">Featured</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li> 
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px" alt="">
+          
         </div>
         <!-- <div class="close-container" id="closebtn" >
             <div class="close-icon" id="closebutton">X</div>
@@ -71,24 +80,15 @@
 
     <!-- -------------Featured Section------------------ -->
     <section class="featureSection">
-        <div class="featuredHeading"> <h2> Featured Products</h2></div> 
-        <div class="products">
-            <div class="images">
-                <div class="jacket">
-                    <img src="" alt="">
-                </div>
-                <div class="sweater"></div>
-                <div class="T-shirt"></div>
-                <div class="jeans"></div>
-            </div>
-        </div>
-
-
+        <div class="featuredHeading" id="fh">
+             <h2> Featured Products</h2>
+        </div> 
+       
         <!---------- Featured Category------------ -->
         
         <div class="categories">
             <div class="small-container">
-                <div class="row">
+                <div class="row" id="rw">
                     <div class="col-3">
                         <img src="images/shirts/kitengeShirt1.jpeg" alt="">
                         <h2>kitengeshirt</h2>
@@ -110,8 +110,7 @@
             <div class="col-2" id="col-2Paragraph">
                 <h1>Must Have Edition!</h1>
                 <p>Introducing our latest featured product – a must-have addition to your wardrobe! 
-                    Elevate your style with our exquisite collection of fashion-forward clothes. 
-                    
+                   
                 </p>
                 <a href="products.html" class="btn">See More &#8594;</a>
             </div>
@@ -120,54 +119,54 @@
 
     </section>
    
+    <!-------------------- Testimomial ------------------->
 
-    <!-- Testimomial -->
     <section id="testimonial">
-        <div class="title-text">
-        <p>TESTIMONIALS</p>
-        <h1>What Client Says</h1>
-        </div>
+        <div class="featuredHeading">
+            <h2> Testimonials</h2>
+            <p>What Client Says</p>
+       </div> 
         <div class="testimonial-row">
-        <div class="testimonial-col">
-            <div class="user">
-            <img src="images/img-1.jpg" alt="">
-            <div class="user-info">
-                <h4>KEN NORMAN  <i class="fa fa-twitter"></i>        </h4>
-                <small>@kennorman</small>
+            <div class="testimonial-col">
+                <div class="user">
+                <img src="images/img-1.jpg" alt="">
+                <div class="user-info">
+                    <h4>KEN NORMAN  <i class="fa fa-twitter"></i></h4>
+                    <small>@kennorman</small>
+                </div>
+                </div>
+                <p>I've been a loyal customer of this fashion design website for years, and I'm always amazed by the creativity and 
+                    innovation they bring to their clothing. 
+                    The pieces I've purchased are not only fashionable but also comfortable. I can't wait to see their new collections!
+                </p>
+                
             </div>
+            <div class="testimonial-col">
+                <div class="user">
+                <img src="images/img-2.jpg" alt="">
+                <div class="user-info">
+                    <h4>Hannah Odhiambo <i class="fa fa-twitter"></i>        </h4>
+                    <small>@hannahodhiambo</small>
+                </div>
+                </div>
+                <p> I couldn't be happier with the custom outfit I received from this fashion design website. 
+                    The attention to detail and craftsmanship is exceptional. 
+                    I felt like a runway model in my new attire. Highly recommended!
+                </p>
             </div>
-            <p>I've been a loyal customer of this fashion design website for years, and I'm always amazed by the creativity and 
-                innovation they bring to their clothing. 
-                The pieces I've purchased are not only fashionable but also comfortable. I can't wait to see their new collections!
-            </p>
-            
-        </div>
-        <div class="testimonial-col">
-            <div class="user">
-            <img src="images/img-2.jpg" alt="">
-            <div class="user-info">
-                <h4>Hannah Odhiambo <i class="fa fa-twitter"></i>        </h4>
-                <small>@hannahodhiambo</small>
+            <div class="testimonial-col">
+                <div class="user">
+                <img src="images/img-3.jpg" alt="">
+                <div class="user-info">
+                    <h4>Collins Gichuru<i class="fa fa-twitter"></i>        </h4>
+                    <small>@collinsgichuru</small>
+                </div>
+                </div>
+                <p> The fashion designers on this website have a true talent for creating unique and stylish clothing. 
+                    I ordered a dress for a special occasion, and it exceeded my expectations in terms of quality and design.
+                    I received compliments all night!
+                </p>
             </div>
-            </div>
-            <p> I couldn't be happier with the custom outfit I received from this fashion design website. 
-                The attention to detail and craftsmanship is exceptional. 
-                I felt like a runway model in my new attire. Highly recommended!
-            </p>
-        </div>
-        <div class="testimonial-col">
-            <div class="user">
-            <img src="images/img-3.jpg" alt="">
-            <div class="user-info">
-                <h4>Collins Gichuru<i class="fa fa-twitter"></i>        </h4>
-                <small>@collinsgichuru</small>
-            </div>
-            </div>
-            <p> The fashion designers on this website have a true talent for creating unique and stylish clothing. 
-                I ordered a dress for a special occasion, and it exceeded my expectations in terms of quality and design.
-                I received compliments all night!
-            </p>
-        </div>
         </div>
     </section>
 
@@ -231,22 +230,6 @@
  
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/sidenav.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/spacing.css">
     <link rel="stylesheet" href="styles/banners.css">
+    <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/mainpagemedia.css">
+    
 </head>
+  
 <body>
     
     <div class="navbar">
@@ -25,15 +27,15 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img src="images/cart.png" width="30px" height="30px" alt="" id="cart">
+        <!-- <img src="images/cart.png" width="30px" height="30px" alt="" id="cart"> -->
     </div>
 
 
-    <section id="tshirt-banner">
+    <section id="tshirt-banner" class="resposcr">
         <div class="para1">
             <h1>#StayHome!</h1>
             <p>Get In And Go.Get Exclusive offers & discounts</p>
@@ -265,39 +267,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ----------------------------side nav-------------------------------------------------------------------------- -->
    
 <div class="sidenav" id="side" >
@@ -305,9 +274,9 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px" alt="">
@@ -322,60 +291,66 @@
     </div>
 
 <!-- -------------FOOTER---------------- -->
-  <footer>
-    <div class="container">
-        <div class="row3">
-            <div class="footer-col">
-                <img src="images/logo/logo-removebg.png" width="70px" class="lgo">
-                   <div class="openinghrs">
-                        <h3>Opening Hours<div class="underline"><span></span></div></h3>
-                        <p>Monday to Friday - 9am to 9pm</p>
-                        <p>Saturday to Sunday - 8am to 9pm</p>
-                
-                    </div> 
-            </div>
-            <div class="footer-col">
-                <h3>Office <div class="underline"><span></span></div> </h3>
-                <p>Rabai Road</p>
-                <p>Harambee, Jericho</p>
-                <p>stall no 456, Jericho Market</p>
-                <p>Opposite Metropolitan Hospital</p>
-                <p>Nairobi,Kenya</p>
-                <p class="email-id" >damiapparrel2017@gmail.com</p>
-                <h4>+254710 490 102</h4>
-                <h4>+254774 952 109</h4>
-                <h4>+23480 6076 3832</h4>
-                
-                
-            </div>
-            <div class="footer-col">
-                <h3>Links<div class="underline"><span></span></div> </h3>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact</a></li>             
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Newsletter <div class="underline"><span></span></div> </h3>
-                <p>Sign Up for our newsletter to stay up-to-date </p>
-                <form action="">
-                    <i class="fa-regular fa-envelope fa-beat"></i>
-                    <input type="email" placeholder="Enter your email" required>
-                </form>
-                <button type="submit" id="submitbtn">Submit</button>
-                <div class="social-icons">
-                    <a href=""> <img src="images/socialmediaicons/pngtree-facebook.jpg"  width="50px"></a>
-                    <a href=""><img src="images/socialmediaicons/insta-logo-png-transparent-background.png" width="50px"></a>
-                    <a href=""><img src="images/socialmediaicons/twitter-icon.png" width="50px"></a>
+ 
+    <footer>
+        <div class="container">
+            <div class="row3">
+                <div class="footer-col">
+                    <img src="images/logo/logo-removebg.png" width="70px" class="lgo">
+                       <div class="openinghrs">
+                            <h3>Opening Hours<div class="underline"><span></span></div></h3>
+                            <p>Monday to Friday - 9am to 9pm</p>
+                            <p>Saturday to Sunday - 8am to 9pm</p>
+                    
+                        </div> 
+                </div>
+                <div class="footer-col">
+                    <h3>Office <div class="underline"><span></span></div> </h3>
+                    <p>Rabai Road</p>
+                    <p>Harambee, Jericho</p>
+                    <p>stall no 456, Jericho Market</p>
+                    <p>Opposite Metropolitan Hospital</p>
+                    <p>Nairobi,Kenya</p>
+                    <p class="email-id" >damiapparrel2017@gmail.com</p>
+                    <h4>+254710 490 102</h4>
+                    <h4>+254774 952 109</h4>
+                    <h4>+23480 6076 3832</h4>
+                    
+                    
+                </div>
+                <div class="footer-col">
+                    <h3>Links<div class="underline"><span></span></div> </h3>
+                    <ul>
+                       
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>         
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter <div class="underline"><span></span></div> </h3>
+                    <p>Sign Up for our newsletter to stay up-to-date </p>
+                    <form action="">
+                        <i class="fa-regular fa-envelope fa-beat"></i>
+                        <input type="email" placeholder="Enter your email" required>
+                    </form>
+                    <button type="submit" id="submitbtn">Submit</button>
+                    <div class="social-icons">
+                        <a href=""> <img src="images/socialmediaicons/pngtree-facebook.jpg"  width="50px"></a>
+                        <a href=""><img src="images/socialmediaicons/insta-logo-png-transparent-background.png" width="50px"></a>
+                        <a href=""><img src="images/socialmediaicons/twitter-icon.png" width="50px"></a>
+                    </div>
                 </div>
             </div>
+    
         </div>
-
-    </div>
-    <hr>
-    <p class="copyright">Dami Apparel  &#169; 2021- All Rights Reserved</p>
+        <hr>
+        <p class="copyright">Dami Apparel  &#169; 2021- All Rights Reserved</p>
+      </footer> 
+    
+     
+    
   </footer> 
 
  
