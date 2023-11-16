@@ -40,7 +40,9 @@ p{
     align-items: center;
    
 }
-
+.logo img{
+    width: 70px; 
+}
 .logo h1{
     color: #555;
     font-size: 25px;
